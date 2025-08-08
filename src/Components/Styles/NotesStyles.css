@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    z-index: 0;
+    background-color: #DAE5F5;
+    font-family: "Roboto",sans-serif;
+}
+.icon{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.navbar{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    background-color: #001F8B;
+    height: 98px;
+    font-weight: normal;
+}
+.textarea{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    padding: 20px;
+    background-color: #001F8B;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.back_button{
+    display: none;
+}
+#textarea{
+    resize: none;
+   width: 1078px;
+    height: 155px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+    overflow: auto;
+}
+#add{
+    margin-top: -45px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 38px;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16008B;
+}
+#add:disabled{
+    cursor: not-allowed;
+    background-color: #A6A6A6;
+}
+#add:enabled:hover{
+    transform: scale(1.2);
+}
+.note_box{
+    background-color: white;
+    z-index: 20;
+    padding: 10px;
+    margin: 10px;
+    text-align: start;
+    border: 1p solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.middle_box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 235px;
+    overflow-y: scroll;
+    font-family: "Roboto",sans-serif;
+}
+.time{
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+    align-items: center;
+}
+.small_circle{
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    background-color: black;
+}
+@media(max-width:480px){
+    .textarea{
+        width: 100%;
+        
+        position: fixed;
+        box-sizing: border-box;
+        bottom: 2%;
+        height: 130px;
+        
+    }
+    .back_button{
+        width: fit-content;
+        display: flex;
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: #001F8B;
+    }
+    
+    #textarea{
+        width: 90%;
+        margin: auto;
+        
+        border-radius: 5px;
+        height: 110px;
+    }
+    .navbar{
+        height: 66px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    .note_box{
+        background-color: white;
+        z-index: 20;
+        padding: 10px;
+        margin: 10px;
+        text-align: start;
+        border: 1p solid black;
+        border-radius: 5px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+}

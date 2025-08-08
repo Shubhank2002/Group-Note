@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.blur{
+    backdrop-filter: blur(5px);
+    
+}
+.dialogue{
+    z-index: 999;
+    align-self: center;
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    top: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border:1px solid black;
+    padding: 30px;
+    
+}
+@media(max-width:480px){
+    .dashboard_section{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .dialogue{
+        z-index: 999;
+        align-self: center;
+        position: fixed;
+        
+        bottom: 50%;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        border:1px solid black;
+        padding: 30px;
+        margin: 30px;
+    }
+}
